@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Profile>
-  <Name>donotknock</Name>
-  <Author>donotknock</Author>
-  <Description>Self-hosted event coordination and productivity tools, including the EventSpace spatial canvas and mobile companion app.</Description>
-  <Website>https://github.com/donotknock/EventSpace</Website>
-</Profile>
+<CommunityApplications>
+  <Profile>
+    Self-hosted event coordination and productivity tools, including the EventSpace spatial canvas and mobile companion app.
+  </Profile>
+  <Icon>https://raw.githubusercontent.com/donotknock/EventSpace/main/Resources/EventSpace-Icon-Darkmode.png</Icon>
+  <WebPage>https://github.com/donotknock/EventSpace</WebPage>
+</CommunityApplications>
