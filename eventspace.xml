@@ -16,7 +16,10 @@
   
   <Config Name="WebUI &amp; API Port" Target="3000" Default="3000" Mode="tcp" Description="Unified container port serving both the WebUI canvas and REST API" Type="Port" Display="always" Required="true" Mask="false">3000</Config>
   <Config Name="App Data" Target="/app/data" Default="/mnt/user/appdata/eventspace" Mode="rw" Description="Persistent host directory for SQLite database storage (runs in WAL mode)" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/eventspace</Config>
-  <Config Name="Mobile Companion PIN" Target="COMPANION_PIN" Default="EVSP-9482" Mode="" Description="Security PIN required to pair the mobile companion app with this EventSpace instance" Type="Variable" Display="always" Required="false" Mask="false">EVSP-9482</Config>
+  
+  <Config Name="Admin Username" Target="ADMIN_USERNAME" Default="admin" Mode="" Description="Initial administrator username to seed on first startup." Type="Variable" Display="always" Required="true" Mask="false">admin</Config>
+  <Config Name="Admin Password" Target="ADMIN_PASSWORD" Default="password123" Mode="" Description="Initial administrator password to seed on first startup. Change this immediately after logging in!" Type="Variable" Display="always" Required="true" Mask="true">password123</Config>
+  
   <Config Name="Internal Port" Target="PORT" Default="3000" Mode="" Description="Internal Express listening port (must match container port target)" Type="Variable" Display="advanced" Required="false" Mask="false">3000</Config>
   <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="Container user ID (Unraid standard: nobody=99)" Type="Variable" Display="advanced" Required="false" Mask="false">99</Config>
   <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="Container group ID (Unraid standard: users=100)" Type="Variable" Display="advanced" Required="false" Mask="false">100</Config>
